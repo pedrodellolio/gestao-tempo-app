@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarefas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav__items">
+        <a href="/index.html" class="nav__item">Tarefas</a>
+        <a href="/pomodoro.html" class="nav__item">Pomodoro</a>
+      </div>
+      <button class="btn">Login</button>
+    </nav>
+
+    <section class="container">
+      <div class="form__header">
+        <h2 class="form__title">Crie uma nova tarefa</h2>
+        <p class="form__description">
+          Dê um nome a sua tarefa e defina uma data para se organizar melhor!
+        </p>
+      </div>
+      <form class="form__container">
+        <input placeholder="Nome da tarefa" type="text" name="tarefa" />
+        <div class="form__date">
+          <div>
+            <label for="data">Dia:</label>
+            <input type="date" name="data" />
+          </div>
+          <div>
+            <label for="data">de</label>
+            <input type="time" name="horaInicio" />
+            <label for="data">até</label>
+            <input type="time" name="horaFim" />
+          </div>
+        </div>
+
+        <button class="btn primary" type="submit">Criar tarefa</button>
+      </form>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+#clock {
+  border-radius: 50%;
+  background-color: #10002b;
+}
+
+.pomodoro {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.pomodoro__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
