@@ -12,24 +12,15 @@
       rel="stylesheet"
     />
     <link href="/css/common.css" rel="stylesheet" />
-    <link href="/css/pomodoro.css" rel="stylesheet" />
+    <link href="/css/meu-progresso.css" rel="stylesheet" />
     <script src="/components/header.js" type="text/javascript" defer></script>
   </head>
   <body>
     <header-component></header-component>
 
-    <div class="pomodoro">
-      <canvas id="clock"></canvas>
-    </div>
-    <div class="pomodoro__buttons">
-      <button onclick="handleBtnClick()" id="start-pause" class="btn primary">
-        Iniciar
-      </button>
-      <button onclick="handleResetClick()" class="btn primary">
-        Reiniciar
-      </button>
-    </div>
+    <div id="chart"></div>
 
-    <script src="/js/pomodoro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="/components/lineChart.js"></script>
   </body>
 </html>
